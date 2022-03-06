@@ -1,13 +1,12 @@
 {
-  "name": "angular-tour-of-heroes",
+  "name": "angular-heroku",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node server.js",
+    "build": "ng build --prod",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "homepage": "http://paulo54360.github.io/SoTsD"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +19,7 @@
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
     "angular-in-memory-web-api": "^0.13.0",
+    "express": "^4.17.3",
     "firebase": "^9.6.8",
     "ng-build": "^0.1.12",
     "rxjs": "~7.5.0",
